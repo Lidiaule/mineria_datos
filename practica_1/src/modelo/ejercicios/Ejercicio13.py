@@ -27,7 +27,7 @@ class Ejercicio13:
 
         dim_fecha = leer_delta(self.spark, RUTA_GOLD_DIM_FECHA)
 
-        # Exportamos la tabla de hechos particionada por Ticker
+        #Exportamos la tabla de hechos particionada por Ticker
         exportar_parquet(hechos, RUTA_EXPORT_GOLD + "/hechos", particion="Ticker")
 
         # Exportamos las dimensiones
